@@ -14,7 +14,7 @@ body {
 }
 
 .layout {
-    --offset: 15px;
+    --offset: 48px;
 
     max-width: calc(1080px + var(--offset) * 2);
     padding: 0px var(--offset);
@@ -36,6 +36,10 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    margin: 0 calc(var(--offset) * -1);
+    padding: 32px var(--offset);
+
+    border-bottom: 1px solid #eaeaea;
 
     nav {
         gap: 30px;
@@ -62,6 +66,8 @@ body {
             flex-direction: row;
             align-items: center;
             gap: 10px;
+
+            cursor: pointer;
         }
     }
 }
@@ -70,4 +76,21 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 16px;
+
+    h1 {
+        font-family: "Inter";
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        color: #000;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 17px;
+        color: #9d9d9d;
+    }
 }
